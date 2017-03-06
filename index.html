@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+	
+	<div id="game" style="width:1200px;height:800px;position:relative;">
+	</div>
+
+	<script>
+
+	function clear() {
+		$('#game').html('');
+	}
+
+	function drawRect(x, y) {
+		$('#game').append(
+			'<div style="width:10px;height:10px;position:absolute;background-color:#000;' + 
+			'top:' + y*10 + 'px;left:' + x*10 + 'px;"></div>');
+	}
+
+
+		
+	// Game Code Here
+	
+
+
+
+	</script>
+</body>
+</html>
